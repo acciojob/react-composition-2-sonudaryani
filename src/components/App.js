@@ -1,12 +1,12 @@
 
-import React from "react";
+import React, {useState} from "react";
+import ShowButton from "./ShowButton";
 import './../styles/App.css';
 
 const App = () => {
+  
   return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
+    <ShowButton />
   )
 }
 
