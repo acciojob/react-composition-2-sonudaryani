@@ -28,10 +28,10 @@ const ShowButton = () => {
   }, [show]);
 
   return (
-    <div className="model-overlay">
+    <div>
         <button onClick={handleShowClick}>Show Modal</button>
         { show && (
-          <div ref={modalRef}>
+          <div className="model-overlay" ref={modalRef}>
             <button onClick={handleCloseClick} className="model-close">Close</button>
             <p className="model p">This is the content of Modal</p>
           </div>
